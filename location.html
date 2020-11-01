@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8">
+        <title>Location</title>
+    </head>
+    <body>
+        <div class = "header">
+            <a class = "otherPages" href="index.html">Homepage</a>
+            <a class = "otherPages" href="color.html">Colour</a>
+            <span class = "otherPages selected">Location</span>
+            <a class = "otherPages" href="about.html">About</a>
+        </div>
+        <div class="allLocation">
+        <p class="locationGreetName"></p>
+        <p class="locationEstimate"></p>
+        </div>
+        <script>
+            loadName = window.onload = localStorage.getItem("Name");
+            document.querySelector('.locationGreetName').style.color = "black";
+            document.querySelector('.locationGreetName').innerHTML = 'Here is your location info.';
+            if (!/^[^a-zA-Z]*$/.test(loadName))
+                document.querySelector('.locationGreetName').innerHTML = 'Hey ' + loadName + ', here is your location info.';
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.querySelector('.locationEstimate').innerHTML = "<strong>Latitude: </strong>" + position.coords.latitude + "<br><strong>Longitude: </strong>" + position.coords.longitude;
+            },
+              function(error) {
+                if (error.code == error.PERMISSION_DENIED)
+                  document.querySelector('.locationGreetName').innerHTML = 'Please allow location permission.';
+                  if (!/^[^a-zA-Z]*$/.test(loadName))
+                    document.querySelector('.locationGreetName').innerHTML = loadName + ', please allow location permission.';
+                  document.querySelector('.locationGreetName').style.color = "red";
+              });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+.header {
+    text-align: center;
+    background-color: black;
+    padding: 10px 0 10px 0;
+    min-width: 200px;
+}
+.otherPages {
+    margin: 2%;
+    color: white;
+    font-weight: bold;
+}
+.selected {
+    margin: 2%;
+    font-weight: bold;
+    color: gray;
+}
+p, h1, form {
+    text-align: center;
+}
+.greet {
+    margin: 0;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 75%);
+}
+.welcome {
+    margin: 10% 0 0 0;
+}
+.enterName {
+    font-size: 160%;
+    min-width: 350px;
+}
+#nameBox {
+    margin: 0 0 5% 0;
+    border: 1px solid;
+    border-radius: 4px;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+#hiddenText {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    margin: 5% 0 0 0;
+}
+.all {
+    margin: 0 10px 0 10px;
+}
+.downLinks {
+    text-align: center;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 80px);
+    display: none;
+}
+.selectButton {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.bttn1 {
+    margin-right: 10px;
+    background-image: linear-gradient(to right, blue , lightBlue);
+}
+.bttn2 {
+    margin-left: 10px;
+    background-image: linear-gradient(to right, brown , pink);
+}
+
+
+
+/* color */
+.redButton {
+    background-color: #FF0000;
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    margin-right: 5px;
+}
+.blueButton {
+    background-color: #0000FF;
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    margin-right: 5px;
+}
+.greenButton {
+    background-color: #00FF00;
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    margin-right: 5px;
+}
+.allSliders {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+.input {
+    text-align: center;
+}
+.colorGreetName {
+    position: absolute;
+    top:25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -25%);
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    font-size: 20px;
+}
+
+
+
+
+/*location*/
+.allLocation {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+.locationGreetName {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.about {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    font-size: 20px;
+}

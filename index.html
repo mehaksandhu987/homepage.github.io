@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8">
+        <title>Homepage</title>
+    </head>
+    <body>
+        <div class = "header">
+            <span class = "selected">Homepage</span>
+            <a class = "otherPages" href="color.html">Colour</a>
+            <a class = "otherPages" href="location.html">Location</a>
+            <a class = "otherPages" href="about.html">About</a>
+        </div>
+        <div class="all">
+        <h1 class = "welcome">Welcome to this website</h1>
+        <div class="greet">
+        <p class = "enterName">Enter your name below</p>
+        <form>
+            <input type = "text" placeholder = "Name" id="nameBox">
+            <button onclick="hiddentext()" type = "button" value="Submit" id="submitButton">Submit</button>
+        </form>
+        </div>
+        <p id="hiddenText" class="enterName"></p>
+        <div class="downLinks">
+            <button onclick="location.href='color.html';" class="selectButton bttn1">Colour</button>
+            <button onclick="location.href='location.html';" class="selectButton bttn2">Location</button>
+            <p><strong>Colour:-</strong> Changes background colour of the webpage</p>
+            <p><strong>Location:-</strong> Estimates your current location</p>
+        </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8">
+        <title>About</title>
+    </head>
+    <body>
+        <div class = "header">
+            <a class = "otherPages" href="index.html">Homepage</a>
+            <a class = "otherPages" href="color.html">Colour</a>
+            <a class = "otherPages" href="location.html">Location</a>
+            <span class = "otherPages selected">About</span>
+        </div>
+            <p class="about"></p>
+        <script>
+            document.querySelector('.about').innerHTML = "This website was created by Mehak Sandhu :)";
+            loadName = window.onload = localStorage.getItem("Name");
+                if (!/^[^a-zA-Z]*$/.test(loadName))
+                    document.querySelector('.about').innerHTML = 'Hey ' + loadName + "<br>This website was created by Mehak Sandhu :)";
+        </script>
+    </body>
+</html>

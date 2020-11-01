@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8">
+        <title>Colour</title>
+    </head>
+    <body>
+        <div class = "header">
+            <a class = "otherPages" href="index.html">Homepage</a>
+            <span class = "otherPages selected">Colour</span>
+            <a class = "otherPages" href="location.html">Location</a>
+            <a class = "otherPages" href="about.html">About</a>
+        </div>
+        <p class="colorGreetName">Play with buttons and sliders below to change the background colour of the webpage.</p>
+        <div class="allSliders">
+          <div class="input">
+
+
+          <button onClick="bttnRed()" class = "redButton" id = "redColor">Red</button>
+          <input onInput="redfn()" type="range" min="0" max="255" id="redSlider" class="slider">
+          </div>
+
+          <br>
+
+          <div class="input">
+          <button onClick="bttnGreen()" class = "greenButton" id = "greenColor">Green</button>
+          <input onInput="greenfn()" type="range" min="0" max="255" id="greenSlider" class="slider">
+          </div>
+          <br>
+          <div class="input">
+          <button onClick="bttnBlue()" class = "blueButton" id = "blueColor">Blue</button>
+          <input onInput="bluefn()" type="range" min="0" max="255" id="blueSlider" class="slider">
+          </div>
+          </div>
+          <script src="script.js"></script>
+    </body>
+</html>
